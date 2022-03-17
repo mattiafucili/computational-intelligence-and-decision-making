@@ -1,0 +1,14 @@
+Naive Bayes prediction model
+1. Training dataset: Provide a-priori probabilities of your target feature
+2. Training dataset: Choose the categorical descriptive feature (one feature). Find a-priori conditional probabilities for each level of this feature. Give the explanation of values to be obtained.
+3. Testing: Using Bayes rule calculate the post conditional probabilites of target feature for different values of selected descriptive feature. Give the explanation of values to be obtained.
+4. Experiment: Select at least two categorical features. Estimate naive Bayes model (without smoothing procedure (Laplace), then applying it for different values of smoothing parameter). Provide predictions for your target feature using test dataset.
+5. Experiment: Select at least two continuous features. Estimate naive Bayes model (without smoothing procedure (Laplace), then applying it for different values of smoothing parameter). Provide predictions for your target feature using test dataset.
+	p.s. You should aware of that how your chosen procedure (package or library) perform the discretization of continuous features.
+	For example, in R, e1071 package contains the naiveBayes function. It replaces numeric variables with a gaussian distribution.
+	If you aren't satisfied with using a gaussian distribution or your data doesn't follow this distribution, it is recommended  discretize / bucketize your numeric variables on your own or transform your data to be normal.
+	Give this information in the report.
+6. Experiment: Select at least two continuous features and two numeric features OR all features in your training dataset. Estimate naive Bayes model (without smoothing procedure (Laplace), then applying it for different values of smoothing parameter). Provide predictions for your target feature using test dataset.
+7. For each experiment, find F1 score and make conclusion about the goodness of Naive Bayes model under different configurations. Explain the obtained results.
+8. For each experiment, provide ROC (AUC) and LIFT curves. Comment the obtained results.
+9. Make final conclusions about the created naive Bayes classifier.
